@@ -136,7 +136,7 @@
                 <div class="container-fluid">
                     <hr><h2 class="text-dark">TODO ANLEGEN</h2>
             <hr>
-            <form>
+            <form id="formanlegen">
                 <div class="form-group">
                     <label class = "text-dark"for="todo">TODO Text</label>
                     <input type="text" id="todo" placeholder="Enter TODO Text" class="form-control form-control-sm">
@@ -147,13 +147,18 @@
                     <input type="text" id="deadline" placeholder="Enter Deadline" class="form-control form-control-sm">
     
                 </div>
-                <div class="form-group">
+                <div class="form-group" id="prozenttext">
                     <label class = "text-dark" for="prozent">Prozent</label>
                     <input type="text" id="prozent" placeholder="Enter Prozent" class="form-control form-control-sm">
                     
                 </div>
+                <div class="form-group">
+                    <label class = "text-dark" for="prozent">Time of the deadline</label>
+                    <input type="text" id="deadlinetime" placeholder="Enter Deadline Time" class="form-control form-control-sm">
+                    
+                </div>
                 
-                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="submit" class="btn btn-success" id="buttonanlegen">Submit</button>
 
             </form>
                 </div>
@@ -168,6 +173,11 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/script.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <script src="firebase.js"></script>
+    
 </body>
 
 </html>
