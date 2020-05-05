@@ -13,7 +13,7 @@ var firebaseConfig = {
 
   var d = new Date();
   var t = d.getTime();
-  var counter =t;
+  var counter=t;
   readTask();
 
   function readTask(){
@@ -36,7 +36,7 @@ var firebaseConfig = {
                           <div class="row no-gutters align-items-center">
                               <div class="col">
                                   <div class="progress">
-                                      <div class="progress-bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: ${taskValue.prozent}%;">${taskValue.prozent}</div>
+                                      <div class="progress-bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: ${taskValue.prozent}%;">${taskValue.prozent}%</div>
                                   </div>
                               </div>
                           </div>
@@ -44,7 +44,7 @@ var firebaseConfig = {
                   </div>
               </div>
               <div class="card-body">
-                  <p><i class="fas fa-calendar fa-1x text-gray-300"></i>&nbsp;${taskValue.deadline}&nbsp;<i class="fas fa-clock fa-1x text-gray-300"></i>&nbsp;${taskValue.deadlinetime}</p>
+                  <p><i class="fas fa-calendar fa-1x text-gray-300"></i>&nbsp;${taskValue.deadlinezsm.split("T")[0]}&nbsp;<i class="fas fa-clock fa-1x text-gray-300"></i>&nbsp;${taskValue.deadlinezsm.split("T")[1]}</p>
               </div>
           </div>
       </div>

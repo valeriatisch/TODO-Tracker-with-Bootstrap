@@ -17,25 +17,25 @@ var firebaseConfig = {
 
   document.getElementById("formanlegen").addEventListener("submit",(e)=>{
     var task = document.getElementById("todo").value;
-    var deadline = document.getElementById("deadline").value;
+    //var deadline = document.getElementById("deadline").value;
     var prozent = document.getElementById("prozent").value;
-    var deadlinetime = document.getElementById("deadlinetime").value;
+    //var deadlinetime = document.getElementById("deadlinetime").value;
+    var deadlinezsm = document.getElementById("deadlinezsm").value;
     e.preventDefault();
-    createTask(task,deadline,prozent,deadlinetime);
+    createTask(task,prozent,deadlinezsm);
     formanlegen.reset();
   });
 
 
-  function createTask(tasktext,deadline,prozent,deadlinetime){
+  function createTask(tasktext,prozent,deadlinezsm){
     console.log(counter);
     counter+=1;
     console.log(counter);
     var task={
       id:counter,
       task: tasktext,
-      deadline:deadline,
       prozent:prozent,
-      deadlinetime:deadlinetime
+      deadlinezsm:deadlinezsm
     }
     let db= firebase.database().ref("tasks/"+counter);
     db.set(task);
@@ -45,22 +45,22 @@ var firebaseConfig = {
   function reset(){
     document.getElementById("formanlegen").innerHTML=`
     <div class="form-group">
-                    <label class = "text-dark"for="todo">TODO Text</label>
-                    <input type="text" id="todo" placeholder="Enter TODO Text" class="form-control form-control-sm">
+                    <label class = "text-dark" for="todo">TODO Text</label>
+                    <input type="text" id="todo" placeholder="Gib hier dein TODO ein." class="form-control form-control-sm">
         
-                </div>
-                <div class="form-group">
-                    <label class = "text-dark" for="deadline">Deadline</label>
-                    <input type="text" id="deadline" placeholder="Enter Deadline" class="form-control form-control-sm">
-    
                 </div>
                 <div class="form-group" id="prozenttext">
                     <label class = "text-dark" for="prozent">Prozent</label>
-                    <input type="text" id="prozent" placeholder="Enter Prozent" class="form-control form-control-sm">
+                    <input type="text" id="prozent" placeholder="Wie viel hast du bereits geschafft?" class="form-control form-control-sm">
                     
                 </div>
                 
-                <button type="submit" class="btn btn-success" id="buttonanlegen">Submit</button>
+                <div class="form-group">
+                    <label class = "text-dark" for="deadlinezsm">Deadline</label>
+                    <input type="datetime-local" id="deadlinezsm" class="form-control form-control-sm">
+    
+                </div>
+                <button type="submit" class="btn btn-success" id="buttonanlegen">Speichern</button>
     `;
   
   }
