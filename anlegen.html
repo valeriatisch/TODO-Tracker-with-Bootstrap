@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -19,8 +20,12 @@
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
             <div class="container-fluid d-flex flex-column p-0">
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="index.html">
-                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
-                    <div class="sidebar-brand-text mx-3"><span>TODO TRACKER</span></div>
+                    <div class="sidebar-brand-icon rotate-n-15">
+                        <i class="fas fa-laugh-wink"></i>
+                    </div>
+                    <div class="sidebar-brand-text mx-3">
+                        <span>TODO TRACKER</span>
+                    </div>
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
@@ -29,59 +34,45 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="editieren.html"><i class="fas fa-edit"></i><span>TODO editieren</span></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="impressum.html"><i class="icon ion-android-people"></i><span>Impressum</span></a></li>
                 </ul>
-                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+                <div class="text-center d-none d-md-inline">
+                    <button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button>
+                </div>
             </div>
         </nav>
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
-                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
-                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
-                        <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
-                                <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
-                            </div>
-                        </form>
-                        <ul class="nav navbar-nav flex-nowrap ml-auto">
-                            <li class="nav-item dropdown no-arrow" role="presentation">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false"><span class="badge badge-danger badge-counter">3</span><i class="fas fa-bell fa-fw"></i></a>
-                                    <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in"
-                                        role="menu"><a role="presentation" class="dropdown-item"> Du hast drei TODOs zu erledigen!</a></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
                 <div class="container-fluid">
-                    <hr><h2 class="text-dark">TODO anlegen</h2>
-            <hr>
-            <form id="formanlegen">
-                <div class="form-group">
-                    <label class = "text-dark" for="todo">TODO Text</label>
-                    <input type="text" id="todo" placeholder="Gib hier dein TODO ein." class="form-control form-control-sm">
-        
-                </div>
-                <div class="form-group" id="prozenttext">
-                    <label class = "text-dark" for="prozent">Fortschritt</label>
-                    <input type="text" id="prozent" placeholder="Wie viel % hast du bereits geschafft?" class="form-control form-control-sm">
-                    
-                </div>
-                
-                <div class="form-group">
-                    <label class = "text-dark" for="deadlinezsm">Deadline</label>
-                    <input type="datetime-local" id="deadlinezsm" class="form-control form-control-sm">
-    
-                </div>
-                <button type="submit" class="btn btn-success" id="buttonanlegen">Speichern</button>
-
-            </form>
+                    <hr><h3 class="text-dark">TODO anlegen</h3><hr>
+                    <form id="formanlegen">
+                        <div class="form-group">
+                            <label class = "text-dark" for="todo">TODO Text</label>
+                            <input type="text" id="todo" placeholder="Gib hier dein TODO ein." class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group" id="prozenttext">
+                            <label class = "text-dark" for="prozent">Fortschritt</label>
+                            <input type="text" id="prozent" placeholder="Wie viel % hast du bereits geschafft?" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label class = "text-dark" for="deadlinezsm">Deadline</label>
+                            <input type="datetime-local" id="deadlinezsm" class="form-control form-control-sm">
+                        </div>
+                        <button type="submit" class="btn btn-success" id="buttonanlegen">Speichern</button>
+                    </form>
                 </div>
             </div>
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © TODO Tracker 2020</span></div>
+                    <div class="text-center my-auto copyright">
+                        <span>Copyright © TODO Tracker 2020</span>
+                    </div>
                 </div>
             </footer>
-        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+        </div>
+        <a class="border rounded d-inline scroll-to-top" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
