@@ -44,7 +44,7 @@ function reset() {
   document.getElementById("formanlegen").innerHTML = `
   <div class="form-group">
     <label class="text-dark" for="todo">TODO Text</label>
-    <input class="form-control form-control-sm" id="todo" placeholder="Gib hier dein TODO ein." type="text">
+    <input class="form-control form-control-sm" id="todo" placeholder="Gib hier dein TODO ein. Es darf maximal 160 Zeichen enthalten." type="text" maxLength="160">
   </div>
   <div class="form-group" id="prozenttext">
     <label class="text-dark" for="prozent">Fortschritt</label>

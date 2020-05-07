@@ -57,7 +57,7 @@ function updateTask(id, task, prozent, deadlinezsm) {
         <form id="formanlegen">
           <div class="form-group">
             <label class = "text-dark"for="todo">TODO Text</label>
-            <input type="text" id="todo" placeholder="Gib hier dein TODO ein." class="form-control form-control-sm">
+            <input type="text" id="todo" placeholder="Gib hier dein TODO ein. Es darf maximal 160 Zeichen enthalten." class="form-control form-control-sm" maxLength="160">
           </div>
           <div class="form-group" id="prozenttext">
             <label class = "text-dark" for="prozent">Fortschritt</label>
