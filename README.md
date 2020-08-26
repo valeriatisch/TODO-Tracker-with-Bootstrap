@@ -7,7 +7,7 @@ Die TODOs werden in einer persistenten Firebase Realtime Database gespeichert un
 
 ## 🚀 TODO-Tracker lokal starten
 
-### → STEP #0
+### → Schritt #0
 
 * Lade das Repo herunter, entpacke es und gehe in den Ordner.
 * Öffne hier den Terminal.
